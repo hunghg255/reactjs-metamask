@@ -1,0 +1,5 @@
+export const WALLET_TYPE = {
+  META_MASK: 'META_MASK',
+  COIN_98: 'COIN_98',
+  WALLET_CONNECT: 'WALLET_CONNECT',
+};
