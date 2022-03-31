@@ -7,8 +7,8 @@ import {
 } from '../utils/common';
 import { ENVIRONMENTS } from '../utils/constants/environments';
 import { WALLET_TYPE } from '../utils/constants/walltet';
-import useMount from './useMount';
-import { useWallet } from './useWallet';
+import useMount from '../hooks/useMount';
+import { useWallet } from '../hooks/useWallet';
 
 declare const window: any;
 
@@ -23,7 +23,7 @@ export const useWalletInfo = () => {
   return walletState.walletInfo;
 };
 
-const WalletContextProvider = (props: any) => {
+export const WalletContextProvider = (props: any) => {
   const {
     walletState,
     setWalletState,
@@ -212,5 +212,3 @@ const WalletContextProvider = (props: any) => {
     </WalletContext.Provider>
   );
 };
-
-export default WalletContextProvider;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useWalletInfo } from '../hooks/WalletContext';
+import { useWalletInfo } from '../context/WalletContext';
 
 export default function Hello() {
   const walletInfo = useWalletInfo();
